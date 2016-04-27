@@ -1,9 +1,10 @@
 # detection3D
+
 Framework for Fast 3D Object Detection and Localization Using an Uncalibrated Camera
 
 ##### Graphical Abstract 
 
-![Graphical Abstract](https://github.com/asolis/detection3D/blob/master/abstract.png)
+![Graphical Abstract](https://github.com/asolis/detection3D/blob/master/graphical.png)
 
 If you find this code useful in your research/software, please consider citing the following publications:
 
