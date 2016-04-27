@@ -5,10 +5,10 @@ Framework for Fast 3D Object Detection and Localization Using an Uncalibrated Ca
 If you find this code useful in your research/software, please consider citing the following publications:
 
 1. Andrés Solís Montero, Jochen Lang, Robert Laganierè.
-[_A General Framework for Fast 3D Object Detection and Localization Using an Uncalibrated Camera_](http://www.solism.ca).
+ [_A General Framework for Fast 3D Object Detection and Localization Using an Uncalibrated Camera_](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7045976&punumber%3D7045624%26filter%3DAND(p_IS_Number%3A7045853)%26pageNumber%3D5).
  IEEE Winter Conference on Applications of Computer Vision (WACV), 884-891, 2015.
  
-2. Andrés Solís Montero, Hicham Sekkati, Jochen Lang, Robert Laganière, Jeremy James.[_Framework for natural landmark-based robot localization_]().
+2. Andrés Solís Montero, Hicham Sekkati, Jochen Lang, Robert Laganière, Jeremy James.[_Framework for natural landmark-based robot localization_](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6233133&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D6233133).
 IEEE Ninth Conference on Computer and Robot Vision (CRV) , 131-138, 2012.
 
 
