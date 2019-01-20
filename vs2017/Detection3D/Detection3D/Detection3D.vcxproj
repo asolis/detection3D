@@ -85,10 +85,10 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>E:\projects\uOttawa\opencvbuild\;E:\projects\uOttawa\opencv\include\;E:\projects\uOttawa\opencv\include\opencv;E:\projects\uOttawa\opencv\modules\features2d\include;E:\projects\uOttawa\opencv\modules\highgui\include;E:\projects\uOttawa\opencv\modules\core\include;E:\projects\uOttawa\opencv\modules\flann\include;E:\projects\uOttawa\opencv\modules\imgproc\include;E:\projects\uOttawa\opencv\modules\nonfree\include;E:\projects\uOttawa\opencv\modules\video\include;E:\projects\uOttawa\detection3D\vivalib\;E:\projects\uOttawa\opencv\modules\photo\include;E:\projects\uOttawa\opencv\modules\objdetect\include;E:\projects\uOttawa\opencv\modules\calib3d\include;E:\projects\uOttawa\opencv\modules\ml\include;E:\projects\uOttawa\opencv\modules\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -101,10 +101,10 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>E:\projects\uOttawa\opencvbuild\;E:\projects\uOttawa\opencv\include\;E:\projects\uOttawa\opencv\include\opencv;E:\projects\uOttawa\opencv\modules\features2d\include;E:\projects\uOttawa\opencv\modules\highgui\include;E:\projects\uOttawa\opencv\modules\core\include;E:\projects\uOttawa\opencv\modules\flann\include;E:\projects\uOttawa\opencv\modules\imgproc\include;E:\projects\uOttawa\opencv\modules\nonfree\include;E:\projects\uOttawa\opencv\modules\video\include;E:\projects\uOttawa\detection3D\vivalib\;E:\projects\uOttawa\opencv\modules\photo\include;E:\projects\uOttawa\opencv\modules\objdetect\include;E:\projects\uOttawa\opencv\modules\calib3d\include;E:\projects\uOttawa\opencv\modules\ml\include;E:\projects\uOttawa\opencv\modules\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -117,12 +117,12 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>E:\projects\uOttawa\opencvbuild\;E:\projects\uOttawa\opencv\include\;E:\projects\uOttawa\opencv\include\opencv;E:\projects\uOttawa\opencv\modules\features2d\include;E:\projects\uOttawa\opencv\modules\highgui\include;E:\projects\uOttawa\opencv\modules\core\include;E:\projects\uOttawa\opencv\modules\flann\include;E:\projects\uOttawa\opencv\modules\imgproc\include;E:\projects\uOttawa\opencv\modules\nonfree\include;E:\projects\uOttawa\opencv\modules\video\include;E:\projects\uOttawa\detection3D\vivalib\;E:\projects\uOttawa\opencv\modules\photo\include;E:\projects\uOttawa\opencv\modules\objdetect\include;E:\projects\uOttawa\opencv\modules\calib3d\include;E:\projects\uOttawa\opencv\modules\ml\include;E:\projects\uOttawa\opencv\modules\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -137,12 +137,12 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>E:\projects\uOttawa\opencvbuild\;E:\projects\uOttawa\opencv\include\;E:\projects\uOttawa\opencv\include\opencv;E:\projects\uOttawa\opencv\modules\features2d\include;E:\projects\uOttawa\opencv\modules\highgui\include;E:\projects\uOttawa\opencv\modules\core\include;E:\projects\uOttawa\opencv\modules\flann\include;E:\projects\uOttawa\opencv\modules\imgproc\include;E:\projects\uOttawa\opencv\modules\nonfree\include;E:\projects\uOttawa\opencv\modules\video\include;E:\projects\uOttawa\detection3D\vivalib\;E:\projects\uOttawa\opencv\modules\photo\include;E:\projects\uOttawa\opencv\modules\objdetect\include;E:\projects\uOttawa\opencv\modules\calib3d\include;E:\projects\uOttawa\opencv\modules\ml\include;E:\projects\uOttawa\opencv\modules\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

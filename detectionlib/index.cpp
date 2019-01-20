@@ -79,7 +79,7 @@ vector<int> Index::getBitHistogram(const Mat &descriptors)
 vector<uint16_t> Index::createPos()
 {
     vector<uint16_t> rng;
-    int max = 255;
+    const int max = 255;
     bool exist[max];
     for (int i = 0; i < max; i++)
     {
@@ -101,6 +101,7 @@ vector<uint16_t> Index::createPos()
     return rng;
     
 }
+const double M_PI = 3.141592653589793238463;
 const vector<vector<int>> Index::rotateXs()
 {
     vector<vector<int>> data;

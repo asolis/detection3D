@@ -73,11 +73,14 @@ public:
 struct Space
 {
 public:
-    double min;
-    double max;
-    double step;
-    Space(double _min, double _max, double _step):
-    min(_min), max(_max), step(_step){}
+    double _min;
+    double _max;
+    double _step;
+
+    Space(double minimum, double maximum, double step) :
+    _min(minimum), _max(maximum), _step(step)
+	{
+	}
 };
 
 
