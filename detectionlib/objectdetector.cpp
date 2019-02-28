@@ -266,14 +266,3 @@ void ObjectDetector::operator()(const size_t frame_number, const Mat &frameInput
     indices.clear();
     descriptors.clear();
 }
-
-
-
-
-
-
-
-
-
-
-

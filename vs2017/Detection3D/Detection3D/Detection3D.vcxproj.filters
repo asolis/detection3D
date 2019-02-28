@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\detectionlib">
+      <UniqueIdentifier>{201ab2df-0822-4740-9a8e-916bbc537cb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vivalib">
+      <UniqueIdentifier>{6d37b290-e133-44a3-bd4f-85252a82fb88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\detectionlib\bitcount.h">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\detectionlib\brief.h">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\detectionlib\classifier.h">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\detectionlib\feature.h">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\detectionlib\ferns.h">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\detectionlib\hest.h">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\detectionlib\index.h">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\detectionlib\kalman.h">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\detectionlib\objectdetector.h">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\detectionlib\odetector.h">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\detectionlib\rfast.h">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\detectionlib\training.h">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\detectionlib\utils.h">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\detectionlib\warping.h">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vivalib\channel.h">
+      <Filter>Source Files\vivalib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vivalib\direntVS.h">
+      <Filter>Source Files\vivalib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vivalib\input.h">
+      <Filter>Source Files\vivalib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vivalib\listener.h">
+      <Filter>Source Files\vivalib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vivalib\output.h">
+      <Filter>Source Files\vivalib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vivalib\utils.h">
+      <Filter>Source Files\vivalib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vivalib\viva.h">
+      <Filter>Source Files\vivalib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Detection3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\detectionlib\bitcount.cpp">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\detectionlib\brief.cpp">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\detectionlib\classifier.cpp">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\detectionlib\feature.cpp">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\detectionlib\ferns.cpp">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\detectionlib\index.cpp">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\detectionlib\kalman.cpp">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\detectionlib\objectdetector.cpp">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\detectionlib\rfast.cpp">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\detectionlib\SPaRTa.c">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\detectionlib\SPaRTaSSE.c">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\detectionlib\training.cpp">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\detectionlib\warping.cpp">
+      <Filter>Source Files\detectionlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vivalib\channel.cpp">
+      <Filter>Source Files\vivalib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vivalib\input.cpp">
+      <Filter>Source Files\vivalib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vivalib\listener.cpp">
+      <Filter>Source Files\vivalib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vivalib\output.cpp">
+      <Filter>Source Files\vivalib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vivalib\utils.cpp">
+      <Filter>Source Files\vivalib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vivalib\viva.cpp">
+      <Filter>Source Files\vivalib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Detection3D.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

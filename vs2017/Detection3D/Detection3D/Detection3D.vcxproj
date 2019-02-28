@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{B5C39958-63E3-4984-9727-5AA74F9B8F89}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Detection3D</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>E:\projects\uOttawa\opencvbuild\;E:\projects\uOttawa\opencv\include\;E:\projects\uOttawa\opencv\include\opencv;E:\projects\uOttawa\opencv\modules\features2d\include;E:\projects\uOttawa\opencv\modules\highgui\include;E:\projects\uOttawa\opencv\modules\core\include;E:\projects\uOttawa\opencv\modules\flann\include;E:\projects\uOttawa\opencv\modules\imgproc\include;E:\projects\uOttawa\opencv\modules\nonfree\include;E:\projects\uOttawa\opencv\modules\video\include;E:\projects\uOttawa\detection3D\vivalib\;E:\projects\uOttawa\opencv\modules\photo\include;E:\projects\uOttawa\opencv\modules\objdetect\include;E:\projects\uOttawa\opencv\modules\calib3d\include;E:\projects\uOttawa\opencv\modules\ml\include;E:\projects\uOttawa\opencv\modules\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>E:\projects\uOttawa\opencvbuild\;E:\projects\uOttawa\opencv\include\;E:\projects\uOttawa\opencv\include\opencv;E:\projects\uOttawa\opencv\modules\features2d\include;E:\projects\uOttawa\opencv\modules\highgui\include;E:\projects\uOttawa\opencv\modules\core\include;E:\projects\uOttawa\opencv\modules\flann\include;E:\projects\uOttawa\opencv\modules\imgproc\include;E:\projects\uOttawa\opencv\modules\nonfree\include;E:\projects\uOttawa\opencv\modules\video\include;E:\projects\uOttawa\detection3D\vivalib\;E:\projects\uOttawa\opencv\modules\photo\include;E:\projects\uOttawa\opencv\modules\objdetect\include;E:\projects\uOttawa\opencv\modules\calib3d\include;E:\projects\uOttawa\opencv\modules\ml\include;E:\projects\uOttawa\opencv\modules\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>E:\projects\uOttawa\opencvbuild\;E:\projects\uOttawa\opencv\include\;E:\projects\uOttawa\opencv\include\opencv;E:\projects\uOttawa\opencv\modules\features2d\include;E:\projects\uOttawa\opencv\modules\highgui\include;E:\projects\uOttawa\opencv\modules\core\include;E:\projects\uOttawa\opencv\modules\flann\include;E:\projects\uOttawa\opencv\modules\imgproc\include;E:\projects\uOttawa\opencv\modules\nonfree\include;E:\projects\uOttawa\opencv\modules\video\include;E:\projects\uOttawa\detection3D\vivalib\;E:\projects\uOttawa\opencv\modules\photo\include;E:\projects\uOttawa\opencv\modules\objdetect\include;E:\projects\uOttawa\opencv\modules\calib3d\include;E:\projects\uOttawa\opencv\modules\ml\include;E:\projects\uOttawa\opencv\modules\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>E:\projects\uOttawa\opencvbuild\;E:\projects\uOttawa\opencv\include\;E:\projects\uOttawa\opencv\include\opencv;E:\projects\uOttawa\opencv\modules\features2d\include;E:\projects\uOttawa\opencv\modules\highgui\include;E:\projects\uOttawa\opencv\modules\core\include;E:\projects\uOttawa\opencv\modules\flann\include;E:\projects\uOttawa\opencv\modules\imgproc\include;E:\projects\uOttawa\opencv\modules\nonfree\include;E:\projects\uOttawa\opencv\modules\video\include;E:\projects\uOttawa\detection3D\vivalib\;E:\projects\uOttawa\opencv\modules\photo\include;E:\projects\uOttawa\opencv\modules\objdetect\include;E:\projects\uOttawa\opencv\modules\calib3d\include;E:\projects\uOttawa\opencv\modules\ml\include;E:\projects\uOttawa\opencv\modules\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\detectionlib\bitcount.h" />
+    <ClInclude Include="..\..\..\detectionlib\brief.h" />
+    <ClInclude Include="..\..\..\detectionlib\classifier.h" />
+    <ClInclude Include="..\..\..\detectionlib\feature.h" />
+    <ClInclude Include="..\..\..\detectionlib\ferns.h" />
+    <ClInclude Include="..\..\..\detectionlib\hest.h" />
+    <ClInclude Include="..\..\..\detectionlib\index.h" />
+    <ClInclude Include="..\..\..\detectionlib\kalman.h" />
+    <ClInclude Include="..\..\..\detectionlib\objectdetector.h" />
+    <ClInclude Include="..\..\..\detectionlib\odetector.h" />
+    <ClInclude Include="..\..\..\detectionlib\rfast.h" />
+    <ClInclude Include="..\..\..\detectionlib\training.h" />
+    <ClInclude Include="..\..\..\detectionlib\utils.h" />
+    <ClInclude Include="..\..\..\detectionlib\warping.h" />
+    <ClInclude Include="..\..\..\vivalib\channel.h" />
+    <ClInclude Include="..\..\..\vivalib\direntVS.h" />
+    <ClInclude Include="..\..\..\vivalib\input.h" />
+    <ClInclude Include="..\..\..\vivalib\listener.h" />
+    <ClInclude Include="..\..\..\vivalib\output.h" />
+    <ClInclude Include="..\..\..\vivalib\utils.h" />
+    <ClInclude Include="..\..\..\vivalib\viva.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\detectionlib\bitcount.cpp" />
+    <ClCompile Include="..\..\..\detectionlib\brief.cpp" />
+    <ClCompile Include="..\..\..\detectionlib\classifier.cpp" />
+    <ClCompile Include="..\..\..\detectionlib\feature.cpp" />
+    <ClCompile Include="..\..\..\detectionlib\ferns.cpp" />
+    <ClCompile Include="..\..\..\detectionlib\index.cpp" />
+    <ClCompile Include="..\..\..\detectionlib\kalman.cpp" />
+    <ClCompile Include="..\..\..\detectionlib\objectdetector.cpp" />
+    <ClCompile Include="..\..\..\detectionlib\rfast.cpp" />
+    <ClCompile Include="..\..\..\detectionlib\SPaRTa.c" />
+    <ClCompile Include="..\..\..\detectionlib\SPaRTaSSE.c" />
+    <ClCompile Include="..\..\..\detectionlib\training.cpp" />
+    <ClCompile Include="..\..\..\detectionlib\warping.cpp" />
+    <ClCompile Include="..\..\..\vivalib\channel.cpp" />
+    <ClCompile Include="..\..\..\vivalib\input.cpp" />
+    <ClCompile Include="..\..\..\vivalib\listener.cpp" />
+    <ClCompile Include="..\..\..\vivalib\output.cpp" />
+    <ClCompile Include="..\..\..\vivalib\utils.cpp" />
+    <ClCompile Include="..\..\..\vivalib\viva.cpp" />
+    <ClCompile Include="Detection3D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Detection3D.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

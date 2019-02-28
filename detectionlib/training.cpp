@@ -40,11 +40,13 @@ const int Train::minDistance2ReferencePointSqr = minDistance2ReferencePoint *
 const int Train::HALF_PATCH_WIDTH = 15;
 const int Train::SIGMA_BLUR = 15;
 
+const double M_PI = 3.141592653589793238463;
 
 double Train::rad2Deg(double rad)
 {
     return rad*(180/M_PI);
 }
+
 double Train::deg2Rad(double deg)
 {
     return deg*(M_PI/180);
@@ -301,9 +303,9 @@ int  Train::fastTrainFromReference(Mat &image, SimpleParams &params,
 
     int threshold = chooseFASTThreshold(image, 200, 255);
     
-    for (double scale = params.scale.max; scale > params.scale.min; scale*=params.scale.step)
+    for (double scale = params.scale._max; scale > params.scale._min; scale*=params.scale._step)
     {
-        for (double roll = params.roll.min; roll < params.roll.max; roll+=params.roll.step)
+        for (double roll = params.roll._min; roll < params.roll._max; roll+=params.roll._step)
         {
             Mat rotated, descriptor;
             vector<Point2f> cr = rotateImage(image, rotated, roll, scale);
@@ -402,23 +404,23 @@ void Train::trainFromReferenceImage(Mat &image, ViewParams &params, vector<vecto
 
     RNG rng(0xFFFFFFFF);
     int viewPointBin = 0, totalBins = 0;
-    totalBins = ((int) floor(1.0 + abs( log(params.scale.min / params.scale.max) / log (params.scale.step)))) *
-                ((int) ceil(abs((params.yaw.max - params.yaw.min) / params.yaw.step))) *
-                ((int) ceil(abs((params.pitch.max - params.pitch.min) / params.pitch.step))) *
-                ((int) ceil(abs((params.roll.max - params.roll.min) / params.roll.step)));
+    totalBins = ((int) floor(1.0 + abs( log(params.scale._min / params.scale._max) / log (params.scale._step)))) *
+                ((int) ceil(abs((params.yaw._max - params.yaw._min) / params.yaw._step))) *
+                ((int) ceil(abs((params.pitch._max - params.pitch._min) / params.pitch._step))) *
+                ((int) ceil(abs((params.roll._max - params.roll._min) / params.roll._step)));
     
     double rYaw, rPitch, rRoll;
     
     Ptr<FeatureDetector> detector = Train::create(params.detector);
     Ptr<DescriptorExtractor> extractor = Train::create(params.extractor);
     
-    for ( double yaw = params.yaw.min; yaw < params.yaw.max; yaw += params.yaw.step )
+    for ( double yaw = params.yaw._min; yaw < params.yaw._max; yaw += params.yaw._step )
 	{
-		for ( double pitch = params.pitch.min; pitch < params.pitch.max; pitch += params.pitch.step )
+		for ( double pitch = params.pitch._min; pitch < params.pitch._max; pitch += params.pitch._step )
 		{
-			for ( double roll = params.roll.min; roll < params.roll.max; roll += params.roll.step )
+			for ( double roll = params.roll._min; roll < params.roll._max; roll += params.roll._step )
 			{
-				for ( double scale = params.scale.max; scale >= params.scale.min; scale *= params.scale.step )
+				for ( double scale = params.scale._max; scale >= params.scale._min; scale *= params.scale._step )
 				{
                     viewPointBin++;
                     printf("Training %d / %d\n", viewPointBin, totalBins);
@@ -435,9 +437,9 @@ void Train::trainFromReferenceImage(Mat &image, ViewParams &params, vector<vecto
 						Mat warpBlurred, warped, projecMatrix;
 						
                         vector<Point2f> corners;
-                        rPitch = rng.uniform(pitch, pitch + params.pitch.step);
-                        rYaw   = rng.uniform(yaw,yaw + params.yaw.step);
-                        rRoll  = rng.uniform(roll, roll + params.roll.step);
+                        rPitch = rng.uniform(pitch, pitch + params.pitch._step);
+                        rYaw   = rng.uniform(yaw,yaw + params.yaw._step);
+                        rRoll  = rng.uniform(roll, roll + params.roll._step);
                         
 						warpImage(image, rYaw, rPitch ,rRoll,
                                   scale, params.fov, warped, projecMatrix, corners);

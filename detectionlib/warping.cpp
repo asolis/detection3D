@@ -34,6 +34,8 @@
 
 #include "warping.h"
 
+const double M_PI = 3.141592653589793238463;
+
 double Warping::rad2Deg(double rad)
 {
     return rad*(180/M_PI);
